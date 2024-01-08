@@ -1,0 +1,13 @@
+{% include 'main.html' %}
+
+{% block content %}
+    <h1>Список курков</h1>
+    <div class="cadet-list">
+        {% for cadet in cadets %}
+            <a class="cadet-link" href="{% url 'cadet_detail' cadet.id %}">
+                <img src="https://t3.ftcdn.net/jpg/03/53/11/00/360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" alt="">
+                {{ cadet }}
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

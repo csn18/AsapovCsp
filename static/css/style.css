@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.cadet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.cadet-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    box-shadow: 0 2px 5px -4px black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.cadet-link:hover {
+    box-shadow: 0 2px 8px -4px black;
+}
+
+.cadet-link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.perfomance-list {
+    display: flex;
+    gap: 10px;
+}
+
+.perfomance-item {
+    box-shadow: 0 2px 5px -4px black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.cadet-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfomance-name {
+    font-weight: 600;
+}
+
+.back-arrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.back-arrow {
+    color: black;
+}
+
+.back-arrow svg {
+    width: 20px;
+    height: 20px;
+}
