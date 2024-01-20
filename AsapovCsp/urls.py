@@ -4,13 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', include('Main.urls')),
     path('admin/', admin.site.urls),
-    path('cadets/', include('Main.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-if settings.DEBUG:
-    urlpatterns += static(
-        settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
-    )
 
 handler404 = 'Main.views.handler_404'

@@ -3,10 +3,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ЦСП</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="/media/logo.jpg" alt="" width="50" height="50">
+            <div class="logo-text">
+                <div class="logo-text-header">Центр специальной подготовки</div>
+                <div class="logo-text-subheader">им. В.Г. Асапова</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        {% block data %}{% endblock %}
+    </div>
 </body>
 </html>

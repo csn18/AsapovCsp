@@ -10,7 +10,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+.container {
     width: 90%;
     margin: auto;
     padding: 20px 0;
@@ -23,6 +23,12 @@ body {
     padding: 10px 0;
 }
 
+@media screen and (max-width: 550px) {
+    .cadet-list {
+        padding: 10px 0;
+    }
+}
+
 .cadet-link {
     cursor: pointer;
     display: flex;
@@ -33,6 +39,25 @@ body {
     padding: 10px;
     border-radius: 10px;
     transition: .3s;
+}
+
+@media screen and (max-width: 550px) {
+    .cadet-link {
+        padding: 20px 10px;
+    }
+}
+
+.cadet-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadet-heading {
+    font-weight: 600;
+}
+
+.cadet-subhading {
+    font-size: 12px;
 }
 
 .cadet-link:hover {
@@ -50,9 +75,16 @@ body {
     gap: 10px;
 }
 
+@media screen and (max-width: 550px) {
+    .perfomance-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 .perfomance-item {
     box-shadow: 0 2px 5px -4px black;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     transition: .3s;
 }
@@ -80,4 +112,32 @@ body {
 .back-arrow svg {
     width: 20px;
     height: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 5px 15px;
+    background-color: #21271d;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.logo-text-header {
+    font-weight: 500;
+}
+
+.logo-text-subheader {
+    font-weight: 300;
+    font-size: 12px;
 }

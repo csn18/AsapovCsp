@@ -1,12 +1,15 @@
-{% include 'main.html' %}
+{% extends 'main.html' %}
 
-{% block content %}
-    <h1>Список курков</h1>
+{% block data %}
+    <h1>Список курсантов</h1>
     <div class="cadet-list">
         {% for cadet in cadets %}
             <a class="cadet-link" href="{% url 'cadet_detail' cadet.id %}">
                 <img src="/media/no-ava.jpeg" alt="" width="30" height="30">
-                {{ cadet }}
+                <div class="cadet-data">
+                    <div class="cadet-heading">{{ cadet }}</div>
+                    <div class="cadet-subhading">Курсант</div>
+                </div>
             </a>
         {% endfor %}
     </div>
